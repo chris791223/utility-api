@@ -1,0 +1,19 @@
+runtime: php
+env: flex
+
+runtime_config:
+    document_root: public
+
+skip_files: 
+    - .env
+
+env_variables:
+    APP_KEY: base64:qdaauHR2cSj3K8J/X7yo/ZxVv6CjhLx6SBeqqJvyVYk=
+    APP_ENV: production
+    APP_DEBUG: false
+    DB_CONNECTION: mysql
+    DB_HOST: localhost
+    DB_PORT: 3306
+    DB_DATABASE: laravel
+    DB_USERNAME: laravel
+    DB_PASSWORD: laravel
