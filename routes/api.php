@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UnitController;
+use App\Http\Controllers\ScientificCalculatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/convert/unit', [UnitController::class, 'convert']);
+Route::post('/calculate', [ScientificCalculatorController::class, 'calculate']);
